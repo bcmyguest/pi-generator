@@ -12,8 +12,10 @@ def piGen():
 
 p = piGen()
 res = 1.0
+#change this value to increase or decrease the accuracy of the value
+num_iterations = 100000
 
-for i in range(100000000):
+for i in range(num_iterations):
     res = next(p)
     if i%10000 == 0:
         print("pi: " + str(res))
